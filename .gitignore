@@ -1,4 +1,4 @@
-# Created by https://www.gitignore.io/api/visualstudio
+﻿# Created by https://www.gitignore.io/api/visualstudio
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -412,3 +412,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/windows
+
+# Added by me
