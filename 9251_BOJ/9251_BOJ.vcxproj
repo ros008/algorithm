@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{69A0C02D-9DAD-4FE1-B718-EC51A0FEF9EB}</ProjectGuid>
+    <ProjectGuid>{191EA7FC-E2E7-4B17-9916-67AF53497127}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My1242SWE</RootNamespace>
+    <RootNamespace>My9251BOJ</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

@@ -32,8 +32,8 @@ bool find(int r, int c, int dir) {
 	else if (hyuk[r][c] == '@') return true;
 
 	// 무한 루프 확인
-	//if (check[r][c][dir][mem] == true) return false;
-	//else check[r][c][dir][mem] = true;
+	if (check[r][c][dir][mem] == true) return false;
+	else check[r][c][dir][mem] = true;
 
 	// 다음으로 가야할 방향 정하기
 	int nextR = r + dr[dir];
@@ -46,26 +46,19 @@ bool find(int r, int c, int dir) {
 	// ? 이 입력으로 들어왔을 때
 	if (hyuk[r][c] == '?') {
 		for (int i = 0; i < 4; i++) {
-			if (check[r][c][i][mem] == false) {
+			nextR = r + dr[i];
+			nextC = c + dc[i];
+			if (nextR == 0) nextR = R;
+			else if (nextR > R) nextR = 1;
+			if (nextC == 0) nextC = C;
+			else if (nextC > C) nextC = 1;
 
-				check[r][c][i][mem] = true;
-
-				nextR = r + dr[i];
-				nextC = c + dc[i];
-				if (nextR == 0) nextR = R;
-				else if (nextR > R) nextR = 1;
-				if (nextC == 0) nextC = C;
-				else if (nextC > C) nextC = 1;
-
-				ret = max(find(nextR, nextC, i), ret);
-			}
+			ret = max(find(nextR, nextC, i), ret);
 		}
 		return ret;
 	}
 	else {
-		if (check[r][c][dir][mem] == false) {
-			return max(ret, find(nextR, nextC, dir));
-		}
+		return max(ret, find(nextR, nextC, dir));
 	}
 
 	return false;

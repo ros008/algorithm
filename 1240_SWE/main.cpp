@@ -60,7 +60,6 @@ int main() {
 			}
 		}
 
-
 		for (int i = 0;i < 8; i++) {
 			for (int j = 0; j < 10; j++) {
 				if (codeStr.substr(7 * i, 7) == code[j]) {
@@ -71,15 +70,6 @@ int main() {
 				}
 			}
 		}
-
-
-		//cout << codeStr << "\n";
-		//cout << odd << "\n";
-		//cout << even << "\n";
-		//cout << veriCode << "\n";
-		//cout << even * 3 + odd + veriCode << "\n";
-
-
 
 		if ((even * 3 + odd + veriCode) % 10 == 0) {
 			cout << "#" << k << " " << even + odd + veriCode << "\n";
