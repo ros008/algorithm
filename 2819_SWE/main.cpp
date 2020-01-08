@@ -9,7 +9,7 @@ int dx[4] = { -1, 0 , 1, 0 };
 int dy[4] = { 0, 1, 0 , -1 };
 
 set<string> strs;
-vector<vector<int>> arr(4, vector<int>(4, 0));;
+vector<vector<int>> arr;
 
 void getStr(int x, int y, int len, string str) {
 	str += arr[x][y] + '0';
@@ -37,6 +37,9 @@ int main()
 	cin >> T;
 
 	for (int tc = 1; tc <= T; tc++) {
+		strs = set<string>();
+		arr = vector<vector<int>>(4, vector<int>(4, 0));;
+
 		for (int i = 0; i < 4; i++) 
 			for (int j = 0; j < 4; j++) 
 				cin >> arr[i][j];
