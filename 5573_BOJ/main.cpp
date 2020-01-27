@@ -16,6 +16,7 @@ void dfs(int r, int c) {
 		i = r; j = c;
 		return;
 	}
+
 	if (map[r][c] == 1) {
 		if (dp[r][c] == 1)
 			dfs(r, c + 1);
