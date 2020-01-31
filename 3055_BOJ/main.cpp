@@ -1,73 +1,70 @@
 #include <iostream>
-#include <string>
-#include <vector>
 #include <algorithm>
+#include <vector>
+#include <cstring>
 #include <queue>
-#include <cstdlib>
+
 #define MAX 51
+#define INF 1000000007
 
 using namespace std;
 
 int dx[] = { 1, 0, -1, 0 };
 int dy[] = { 0, -1, 0, 1 };
 
-int R, C;
-char mapForest[MAX][MAX];
+int r, c;
+char forestMap[MAX][MAX];
 int waterMap[MAX][MAX];
 bool visited[MAX][MAX];
 
-pair<int, int> startPos;
-pair<int, int> endPos;
-
 queue<pair<int, int>> waterQ;
+pair<int, int> start;
+pair<int, int> dest;
 
-// 입력 받고 watermap, startpos, endpos, mapforest 초기화 해주는 함수
-void Init() {
-	cin >> R >> C;
-	//watermap 초기화
-	for (int i = 0; i < R; i++) {
-		for (int j = 0; j < C; j++) {
-			waterMap[i][j] = 1000;
+int BFS() {
+	queue<pair<pair<int, int>, int>> q;
+	q.push({ start, 0 });
+	visited[start.first][start.second] = true;
+
+	while (!q.empty()) {
+		int x = q.front().first.first;
+		int y = q.front().first.second;
+		int curTime = q.front().second;
+		q.pop();
+
+		if (x == dest.first && y == dest.second)
+			return curTime;
+
+		for (int i = 0; i < 4; i++) {
+			int nx = x + dx[i];
+			int ny = y + dy[i];
+
+			if (nx >= 0 && nx < r && ny >= 0 && ny < c) {
+				if (visited[nx][ny] == false && forestMap[nx][ny] != 'X' && waterMap[nx][ny] > curTime + 1) {
+					visited[nx][ny] = true;
+					q.push({ {nx,ny},curTime + 1 });
+				}
+			}
 		}
 	}
-	for (int i = 0; i < R; i++) {
-		for (int j = 0; j < C; j++) {
-			cin >> mapForest[i][j];
-			if (mapForest[i][j] == 'S') {
-				startPos.first = i;
-				startPos.second = j;
-			}
-			else if (mapForest[i][j] == 'D') {
-				endPos.first = i;
-				endPos.second = j;
-			}
-			else if (mapForest[i][j] == '*') {
-				waterMap[i][j] = 0;
-				waterQ.push(make_pair(i, j));
-			}
-		}
-	}
+
+	return -1;
 }
 
-// watermap 만드는 함수
-void MakeWaterMap() {
+void makeWaterMap() {
 	while (!waterQ.empty()) {
-		int qsize = waterQ.size();
-		for (int i = 0; i < qsize; i++) {
-			int x = waterQ.front().first;
-			int y = waterQ.front().second;
-			waterQ.pop();
+		int x = waterQ.front().first;
+		int y = waterQ.front().second;
+		waterQ.pop();
+		for (int i = 0; i < 4; i++) {
+			int nx = x + dx[i];
+			int ny = y + dy[i];
 
-			for (int j = 0; j < 4; j++) {
-				int nx = x + dx[j];
-				int ny = y + dy[j];
-
-				if (nx >= 0 && ny >= 0 && nx < R && ny < C) {
-					if (mapForest[nx][ny] == '.') {
-						if (waterMap[nx][ny] > waterMap[x][y] + 1) {
-							waterMap[nx][ny] = waterMap[x][y] + 1;
-							waterQ.push(make_pair(nx, ny));
-						}
+			if (nx >= 0 && nx < r&&ny >= 0 && ny < c) {
+				if (forestMap[nx][ny] == '.') {
+					if (waterMap[nx][ny] > waterMap[x][y] + 1) {
+						waterMap[nx][ny] = waterMap[x][y] + 1;
+						waterQ.push({ nx, ny });
 					}
 				}
 			}
@@ -75,41 +72,39 @@ void MakeWaterMap() {
 	}
 }
 
-int main() {
-	ios::sync_with_stdio(false);
-	cin.tie(NULL);
+void getInput() {
+	memset(waterMap, INF, sizeof(waterMap));
+	memset(visited, false, sizeof(visited));
 
-	Init();
-	MakeWaterMap();
-
-	queue<pair<pair<int, int>, int>> q;
-	q.push(make_pair(make_pair(startPos.first, startPos.second), 0));
-	visited[startPos.first][startPos.second] = 1;
-
-	while (!q.empty()) {
-		int x = q.front().first.first;
-		int y = q.front().first.second;
-		int cnt = q.front().second;
-		q.pop();
-
-		if (x == endPos.first && y == endPos.second) {
-			cout << cnt << "\n";
-			return 0;
-		}
-
-		for (int i = 0; i < 4; i++) {
-			int nx = x + dx[i];
-			int ny = y + dy[i];
-
-			if (nx >= 0 && ny >= 0 && nx < R && ny < C) {
-				if (visited[nx][ny] == false && mapForest[nx][ny] != 'X' && waterMap[nx][ny] > cnt + 1) {
-					visited[nx][ny] = 1;
-					q.push(make_pair(make_pair(nx, ny), cnt + 1));
-				}
+	cin >> r >> c;
+	for (int i = 0; i < r; i++) {
+		for (int j = 0; j < c; j++) {
+			cin >> forestMap[i][j];
+			if (forestMap[i][j] == '*') {
+				waterMap[i][j] = 0;
+				waterQ.push({ i,j });
+			}
+			else if (forestMap[i][j] == 'S') {
+				start = { i,j };
+			}
+			else if (forestMap[i][j] == 'D') {
+				dest = { i,j };
 			}
 		}
 	}
-	cout << "KAKTUS" << "\n";
+}
+
+int main() {
+	ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
+
+	getInput();
+	makeWaterMap();
+
+	int ans = BFS();
+	if (ans < 0)
+		cout << "KAKTUS" << "\n";
+	else
+		cout << ans << "\n";
 
 	return 0;
 }
