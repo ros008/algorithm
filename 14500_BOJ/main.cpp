@@ -14,8 +14,7 @@ bool visited[501][501];
 int ans = 0;
 
 void dfs(int x, int y, int sum, int cnt) {
-	visited[x][y] = true; 
-	
+
 	if (cnt == 4) {
 		ans = max(ans, sum);
 		return;
@@ -27,31 +26,22 @@ void dfs(int x, int y, int sum, int cnt) {
 
 		if (nx < 0 || nx >= n || ny < 0 || ny >= m) continue;
 		if (visited[nx][ny]) continue;
-
+		
+		visited[nx][ny] = true;
 		dfs(nx, ny, sum + map[nx][ny], cnt + 1);
 		visited[nx][ny] = false;
 	}
 }
 
-void tetromino1 (int x, int y) { // ぬ
-	int sum = 0;
-	sum += (map[x][y] + map[x][y + 1] + map[x][y + 2] + map[x + 1][y + 1]);
-	ans = max(ans, sum);
-}
-void tetromino2 (int x, int y) { // た
-	int sum = 0;
-	sum += (map[x][y] + map[x + 1][y] + map[x + 2][y] + map[x + 1][y + 1]);
-	ans = max(ans, sum);
-}
-void tetromino3 (int x, int y) { // で
-	int sum = 0;
-	sum += (map[x][y] + map[x][y + 1] + map[x][y + 2] + map[x - 1][y + 1]);
-	ans = max(ans, sum);
-}
-void tetromino4 (int x, int y) { // っ
-	int sum = 0;
-	sum += (map[x][y] + map[x + 1][y] + map[x + 2][y] + map[x + 1][y - 1]);
-	ans = max(ans, sum);
+void tetromino1 (int x, int y) { 
+	if (x >= 1 && y >= 1 && y <= m - 2) // ぬ
+		ans = max(ans, map[x][y] + map[x - 1][y - 1] + map[x - 1][y] + map[x - 1][y + 1]);
+	if (x >= 1 && x <= n - 2 && y >= 1) //た
+		ans = max(ans, map[x][y] + map[x - 1][y - 1] + map[x][y - 1] + map[x + 1][y - 1]);
+	if (x <= n - 2 && y >= 1 && y <= m - 2) //で
+		ans = max(ans, map[x][y] + map[x + 1][y - 1] + map[x + 1][y] + map[x + 1][y + 1]);
+	if (x >= 1 && x <= n - 2 && y <= m - 1) // っ
+		ans = max(ans, map[x][y] + map[x - 1][y + 1] + map[x][y + 1] + map[x + 1][y + 1]);
 }
 
 int main() {
@@ -64,12 +54,10 @@ int main() {
 	 
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
-			memset(visited, false, sizeof(visited));
-			dfs(0, 0, 0, 1);
-			if (i <= n - 2 && j <= m - 3) tetromino1(i, j); // ぬ
-			if (i <= n - 3 && j <= m - 2) tetromino2(i, j); // た
-			if (i >= 1 && j <= m - 3) tetromino3(i, j); // で
-			if (i <= n - 3 && j >= 1) tetromino4(i, j); // っ
+			visited[i][j] = true;
+			dfs(i, j, map[i][j], 1);
+			tetromino1(i, j);
+			visited[i][j] = false;
 		}
 	}
 
