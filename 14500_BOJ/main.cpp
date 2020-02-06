@@ -66,10 +66,10 @@ int main() {
 		for (int j = 0; j < m; j++) {
 			memset(visited, false, sizeof(visited));
 			dfs(0, 0, 0, 1);
-			if (i <= n - 2 && j <= m - 3) tetromino1(i, j);
-			if (i <= n - 3 && j <= m - 2) tetromino2(i, j);
-			if (i >= 1 && j <= m - 3) tetromino3(i, j);
-			if (i <= n - 3 && j >= 1) tetromino4(i, j);
+			if (i <= n - 2 && j <= m - 3) tetromino1(i, j); // ぬ
+			if (i <= n - 3 && j <= m - 2) tetromino2(i, j); // た
+			if (i >= 1 && j <= m - 3) tetromino3(i, j); // で
+			if (i <= n - 3 && j >= 1) tetromino4(i, j); // っ
 		}
 	}
 
