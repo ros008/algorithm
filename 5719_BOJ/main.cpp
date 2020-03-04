@@ -90,7 +90,7 @@ int main() {
 			cin >> u >> v >> p;
 			adj[u].push_back({ p, v }); // { 거리, 연결된 정점 }
 		}
-
+		
 		dijkstra();
 
 		//for (int i = 0; i < n; i++) {
