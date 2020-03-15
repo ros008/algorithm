@@ -10,7 +10,7 @@ using namespace std;
 const int INF = 987654321;
 
 int D, W, K, ans;
-int map[20 + 1][13 + 1];
+int map[13 + 1][20 + 1];
 
 void checkAbility(int cntChemi) {
 	for (int j = 0; j < W; j++) {
@@ -30,7 +30,9 @@ void checkAbility(int cntChemi) {
 }
 
 void dfs(int d, int cnt) {
-	
+	///////////// Áß¿ä!!
+	if (cnt > ans)
+		return;
 	if (d >= D) {
 		checkAbility(cnt);
 		return;
