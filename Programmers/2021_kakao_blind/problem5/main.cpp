@@ -52,7 +52,6 @@ string solution(string play_time, string adv_time, vector<string> logs)
     {
         int start_time = convertTimeStringToInt(logs[i].substr(0, 8));
         int end_time = convertTimeStringToInt(logs[i].substr(9, 8));
-        cout << start_time << " " << end_time << "\n";
         for (int j = start_time; j < end_time; j++)
         {
             total_time[j]++;
@@ -70,9 +69,7 @@ string solution(string play_time, string adv_time, vector<string> logs)
 
     for (int i = adv_time_sec; i < play_time_sec; i++)
     {
-        cout << total_time[i] << " " << total_time[i - adv_time_sec];
         cur_play_cnt += (long long)(total_time[i] - total_time[i - adv_time_sec]);
-        cout << cur_play_cnt;
         if (cur_play_cnt > max_play_cnt)
         {
             max_play_cnt = cur_play_cnt;
