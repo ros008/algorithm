@@ -7,52 +7,41 @@ using namespace std;
 
 int main()
 {
-    int a = 1, b = 2;
-    cout << a + b << "\n";
-
     string S;
-    stack<string> stringStack;
-    cout << "Dfdfd"
-         << "\n";
+    stack<pair<char, int>> stringStack;
+
     cin >> S;
 
-    cout << "S : " << S;
+    for (int i = 0; i < S.length(); i++)
+    {
+        if (S[i] == ')')
+        {
+            int strSize = 0;
+            while (stringStack.top().first != '(')
+            {
+                strSize += stringStack.top().second;
+                stringStack.pop();
+            }
+            stringStack.pop();
+            int repeatCnt = stringStack.top().first - '0';
+            stringStack.top().second = repeatCnt * strSize;
+            repeatCnt = 0;
+        }
+        else
+        {
+            stringStack.push({S[i], 1});
+        }
+    }
 
-    // for (int i = 0; i < S.length(); i++)
-    // {
-    //     if (S[i] == ')')
-    //     {
-    //         string tmp = "";
-    //         while (stringStack.top() != "(")
-    //         {
-    //             tmp = stringStack.top() + tmp;
-    //             stringStack.pop();
-    //         }
-    //         stringStack.pop();
+    int answer = 0;
 
-    //         string res = "";
-    //         int num = stoi(stringStack.top());
-    //         stringStack.pop();
-    //         for (int i = 0; num; i++)
-    //             res += tmp;
+    while (!stringStack.empty())
+    {
+        answer = stringStack.top().second + answer;
+        stringStack.pop();
+    }
 
-    //         stringStack.push(res);
-    //     }
-    //     else if (S[i] == '(' || (S[i] >= '0' && S[i] <= '9'))
-    //     {
-    //         stringStack.push(S.substr(i, 1));
-    //     }
-    // }
-
-    // string answer = "";
-
-    // while (!stringStack.empty())
-    // {
-    //     answer = stringStack.top() + answer;
-    //     stringStack.pop();
-    // }
-
-    // cout << answer;
+    cout << answer;
 
     return 0;
 }
