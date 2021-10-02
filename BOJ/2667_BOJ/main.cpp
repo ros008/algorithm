@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <algorithm>
 
 #define MAX 25
 
@@ -11,7 +12,10 @@ int dy[] = {0, -1, 0, 1};
 
 int N;
 char m[MAX + 1][MAX + 1];
-bool visited[MAX + 1][MAX + 1];
+bool visited[MAX + 1][MAX + 1] = {
+    0,
+};
+vector<int> answer;
 
 int bfs(int a, int b)
 {
@@ -35,7 +39,7 @@ int bfs(int a, int b)
             if (m[nx][ny] == '1' && !visited[nx][ny])
             {
                 q.push({nx, ny});
-                visited[ny][ny] = true;
+                visited[nx][ny] = true;
                 cnt++;
             }
         }
@@ -61,21 +65,18 @@ int main()
     {
         for (int j = 0; j < N; j++)
         {
-            cout << m[i][j] << " ";
+            if (m[i][j] == '1' && !visited[i][j])
+            {
+                int cnt = bfs(i, j);
+                answer.push_back(cnt);
+            }
         }
-        cout << "\n";
     }
 
-    // for (int i = 0; i < N; i++)
-    // {
-    //     for (int j = 0; j < N; j++)
-    //     {
-    //         if (m[i][j] == '1' && !visited[i][j])
-    //         {
-    //             cout << bfs(i, j);
-    //         }
-    //     }
-    // }
+    sort(answer.begin(), answer.end());
+    cout << answer.size() << "\n";
+    for (int i = 0; i < answer.size(); i++)
+        cout << answer[i] << "\n";
 
     return 0;
 }
