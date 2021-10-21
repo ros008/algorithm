@@ -1,12 +1,12 @@
 # Algorithm 🥕
 
 
-## 📚 문제 목록 (2021.10월부터 기록)
+## 📚 문제 목록 (2021.10 ~)
 
 | 난이도 |  분류  | 문제 링크                                                    | 푼 날짜 |
 | ------ | ----- | ------------------------------------------------------------ | ----- |
 | G4     | Simulation    | [배열 돌리기 4](https://www.acmicpc.net/problem/17406)         | 10/21 |
-| G2     | Simulation    | [낚시왕](https://www.acmicpc.net/problem/17143)                | 10/20 |
+| G2     | Simulation    | [낚시왕](https://www.acmicpc.net/problem/17143)                | 10/21 |
 | G4     | BFS           | [치즈](https://www.acmicpc.net/problem/2638)                   | 10/20 |
 | S4     | Brute-force   | [사탕 게임](https://www.acmicpc.net/problem/3085)              | 10/20 |
 | G4     | Simulation    | [나무 재테크](https://www.acmicpc.net/problem/16235)            | 10/18 |
