@@ -39,8 +39,6 @@ void moveShark() {
             Shark curShark = sharkArr[i][j][0];
             sharkArr[i][j].pop_back();
 
-            cout<<curShark.r<<" "<<curShark.c<<"\n";
-
             int& curR = curShark.r;
             int& curC = curShark.c;
             int curS = curShark.s;
@@ -55,7 +53,6 @@ void moveShark() {
                 curR += dir[curD][0];
                 curC += dir[curD][1];
             }
-            // cout<<curR<<" "<<curC<<" "<<curD<<" " <<curShark.z<<"\n";
 
             if (newSharkArr[curR][curC].size() > 0) {
                 if (newSharkArr[curR][curC][0].z < curShark.z) {
@@ -66,11 +63,11 @@ void moveShark() {
                 newSharkArr[curR][curC].push_back(curShark);
             }   
         }
-
-        for (int i=1; i<=R; i++) {
-            for(int j=1; j<=C; j++) {
-                sharkArr[i][j] = newSharkArr[i][j];
-            }
+    }
+    
+    for (int i=1; i<=R; i++) {
+        for(int j=1; j<=C; j++) {
+            sharkArr[i][j] = newSharkArr[i][j];
         }
     }
 }
@@ -99,9 +96,7 @@ int main()
 
     for(int pos = 1; pos <= C; pos++) {
         fishing(pos);
-        Print();
         moveShark();
-        // Print();
     }
 
     cout<<ans<<"\n";
