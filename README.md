@@ -43,5 +43,7 @@
 | B S4       | Binary Search  | [숫자 카드](https://www.acmicpc.net/problem/10815)  | 2021/10/02 |
 | B S1       | BFS            | [단지번호붙이기](https://www.acmicpc.net/problem/2667)  | 2021/10/02 |
 | B G1       | Stack          | [Parentheses](https://www.acmicpc.net/problem/16362)  | 2021/10/01 |
+| P L1       | Hash           | [폰켓몬](https://school.programmers.co.kr/learn/courses/30/lessons/1845)  | 2024/02/29 |
 | B S1       | DP             | [RGB거리](https://www.acmicpc.net/problem/1149)  | 2024/03/04 |
 | B G1       | DP             | [평범한 배낭](https://www.acmicpc.net/problem/12865)  | 2024/03/04 |
+| P L1       | Hash           | [완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576)  | 2024/03/04 |
