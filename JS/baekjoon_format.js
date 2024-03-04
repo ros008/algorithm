@@ -52,3 +52,16 @@ for(let i=1; i<input.length; i++) {
 
 ////////// 이중 배열 생성하기 //////////
 const arr = new Array(n).fill(0).map(() => new Array(3));
+
+
+const fs = require('fs');
+const stdin = 
+  fs.readFileSync(0, 'utf-8')
+  .trim()
+  .split('\n');
+const input = (() => {
+  let line = 0;
+  return () => stdin[line++].split(' ').map(Number);
+})();
+
+const [N, K] = input();

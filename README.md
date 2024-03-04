@@ -44,3 +44,4 @@
 | B S1       | BFS            | [단지번호붙이기](https://www.acmicpc.net/problem/2667)  | 2021/10/02 |
 | B G1       | Stack          | [Parentheses](https://www.acmicpc.net/problem/16362)  | 2021/10/01 |
 | B S1       | DP             | [RGB거리](https://www.acmicpc.net/problem/1149)  | 2024/03/04 |
+| B G1       | DP             | [평범한 배낭](https://www.acmicpc.net/problem/12865)  | 2024/03/04 |
