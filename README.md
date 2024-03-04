@@ -48,3 +48,4 @@
 | B G1       | DP             | [평범한 배낭](https://www.acmicpc.net/problem/12865)  | 2024/03/04 |
 | P L1       | Hash           | [완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576)  | 2024/03/04 |
 | P L2       | Hash           | [전화번호 목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577)  | 2024/03/04 |
+| P L2       | Hash           | [의상](https://school.programmers.co.kr/learn/courses/30/lessons/42578)  | X |
