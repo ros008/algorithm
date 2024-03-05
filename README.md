@@ -50,3 +50,4 @@
 | P L2       | Hash           | [전화번호 목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577)  | 2024/03/04 |
 | P L2       | Hash           | [의상](https://school.programmers.co.kr/learn/courses/30/lessons/42578)  | 2024/03/04 |
 | P L3       | Hash           | [베스트앨범](https://school.programmers.co.kr/learn/courses/30/lessons/42579)  | 2024/03/05 |
+| P L1       | Stack/Queue    | [같은 숫자는 싫어](https://school.programmers.co.kr/learn/courses/30/lessons/12906)  | 2024/03/05 |
