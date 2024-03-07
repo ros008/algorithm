@@ -54,3 +54,4 @@
 | P L2       | Stack/Queue    | [주식가격](https://school.programmers.co.kr/learn/courses/30/lessons/42584)  | 2024/03/06 |
 | P L2       | Stack/Queue    | [다리를 지나는 트럭](https://school.programmers.co.kr/learn/courses/30/lessons/42583)  | 2024/03/06 |
 | P L2       | Heap           | [더 맵게](https://school.programmers.co.kr/learn/courses/30/lessons/42626)  | 2024/03/06 |
+| P L3       | Heap           | [디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627)  | 2024/03/07 |
