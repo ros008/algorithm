@@ -57,3 +57,4 @@
 | P L3       | Heap           | [디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627)  | 2024/03/07 |
 | P L1       |                | [붕대 감기](https://school.programmers.co.kr/learn/courses/30/lessons/250137)  | 2024/03/08 |
 | P L3       | DP             | [거스름돈](https://school.programmers.co.kr/learn/courses/30/lessons/12907)  | 2024/03/11 |
+| P L2       | DP             | [피보나치 수](https://school.programmers.co.kr/learn/courses/30/lessons/12945)  | 2024/03/11 |
