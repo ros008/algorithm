@@ -58,3 +58,4 @@
 | P L1       |                | [붕대 감기](https://school.programmers.co.kr/learn/courses/30/lessons/250137)  | 2024/03/08 |
 | P L3       | DP             | [거스름돈](https://school.programmers.co.kr/learn/courses/30/lessons/12907)  | 2024/03/11 |
 | P L2       | DP             | [피보나치 수](https://school.programmers.co.kr/learn/courses/30/lessons/12945)  | 2024/03/11 |
+| P L3       | DP             | [정수 삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105)  | 2024/03/11 |
