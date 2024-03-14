@@ -60,3 +60,4 @@
 | P L2       | DP             | [피보나치 수](https://school.programmers.co.kr/learn/courses/30/lessons/12945)  | 2024/03/11 |
 | P L3       | DP             | [정수 삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105)  | 2024/03/11 |
 | P L4       | Graph          | [지형 이동](https://school.programmers.co.kr/learn/courses/30/lessons/62050)  | 2024/03/12 |
+| P L3       | Graph          | [순위](https://school.programmers.co.kr/learn/courses/30/lessons/49191)  | 2024/03/14 |
