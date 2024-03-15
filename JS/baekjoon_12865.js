@@ -11,6 +11,8 @@ const [N, K] = input();
 
 // const dp = new Array(N + 1).fill(0).map(() => new Array(K + 1).fill(0));
 
+// dp[i][j] = i번째 물품까지 고려하고, 최대무게가 j라고 했을 때 최대 가치 
+
 // for(let i=1; i<N + 1; i++) {
 //     const [W, V] = input();
 //     for(let j=1; j<K + 1; j++) {
