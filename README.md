@@ -63,3 +63,4 @@
 | P L4       | DP            | [최적의 행렬 곱셈](https://school.programmers.co.kr/learn/courses/30/lessons/12942)   | 2024/03/21 |
 | P L3       | Binary Search | [입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238)           | 2024/03/29 |
 | P L3       | DFS/BFS       | [네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162)           | 2024/03/29 |
+| P L3       | DFS/BFS       | [불량사용자](https://school.programmers.co.kr/learn/courses/30/lessons/64064)         | 2024/03/31 |
