@@ -68,3 +68,4 @@
 | L3         | Basic         | [성적평균](https://softeer.ai/practice/6294)                                          | 2024/03/31 |
 | L2         | Simulation    | [금고털이](https://softeer.ai/practice/6288)                                          | 2024/03/31 |
 | L3         | DFS/BFS       | [출퇴근길](https://softeer.ai/practice/6248)                                          | 2024/03/31 |
+| L3         | DP            | [징검다리](https://softeer.ai/practice/6293)                                          | 2024/03/31 |
