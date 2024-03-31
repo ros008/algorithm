@@ -64,3 +64,5 @@
 | P L3       | Binary Search | [입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238)           | 2024/03/29 |
 | P L3       | DFS/BFS       | [네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162)           | 2024/03/29 |
 | P L3       | DFS/BFS       | [불량사용자](https://school.programmers.co.kr/learn/courses/30/lessons/64064)         | 2024/03/31 |
+| L1         | Basic         | [A+B](https://softeer.ai/practice/6295)                                               | 2024/03/31 |
+| L1         | Basic         | [성적평균](https://softeer.ai/practice/6294)                                          | 2024/03/31 |
