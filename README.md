@@ -70,3 +70,4 @@
 | L3         | DFS/BFS       | [출퇴근길](https://softeer.ai/practice/6248)                                          | 2024/03/31 |
 | L3         | DP            | [징검다리](https://softeer.ai/practice/6293)                                          | 2024/03/31 |
 | L3         | Simulation    | [셔틀버스](https://school.programmers.co.kr/learn/courses/30/lessons/17678)           | 2024/04/01 |
+| L2         | DFS/BFS       | [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)    | 2024/04/02 |
