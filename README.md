@@ -82,4 +82,5 @@
 | LeetCode Easy   | Array         | [Single Number](https://leetcode.com/problems/single-number/)                                             |
 | LeetCode Easy   | Array         | [Intersection of Two Arrays 2](https://leetcode.com/problems/intersection-of-two-arrays-ii/)              |
 | LeetCode Easy   | Array         | [Plus One](https://leetcode.com/problems/plus-one/)                                                       |
-| LeetCode Easy   | Array         | [Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)                                     |
+| LeetCode Easy   | Array         | [Move Zeroes](https://leetcode.com/problems/move-zeroes/)                                                 |
+| LeetCode Easy   | Array         | [Two Sum](https://leetcode.com/problems/two-sum/)                                                         |
