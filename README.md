@@ -72,4 +72,5 @@
 | L3         | Simulation    | [셔틀버스](https://school.programmers.co.kr/learn/courses/30/lessons/17678)               | 2024/04/01 |
 | L2         | DFS/BFS       | [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)        | 2024/04/02 |
 | L3         | Tree          | [길 찾기 게임](https://school.programmers.co.kr/learn/courses/30/lessons/42892)           | 2024/04/02 |
+| L2         | String        | [스킬트리](https://school.programmers.co.kr/learn/courses/30/lessons/49993)               | 2024/04/02 |
 | P L2       | Two Pointer   | [연속된 부분 수열의 합](https://school.programmers.co.kr/learn/courses/30/lessons/178870) | 2024/04/08 |
