@@ -80,3 +80,4 @@
 | LeetCode Medium | Array         | [Rotate Array](https://leetcode.com/problems/rotate-array/)                                               |
 | LeetCode Easy   | Array         | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                                   |
 | LeetCode Easy   | Array         | [Single Number](https://leetcode.com/problems/single-number/)                                             |
+| LeetCode Easy   | Array         | [Intersection of Two Arrays 2](https://leetcode.com/problems/intersection-of-two-arrays-ii/)              |
