@@ -75,3 +75,4 @@
 | P L2          | String        | [스킬트리](https://school.programmers.co.kr/learn/courses/30/lessons/49993)                                           | 2024/04/02 |
 | P L2          | Two Pointer   | [연속된 부분 수열의 합](https://school.programmers.co.kr/learn/courses/30/lessons/178870)                             | 2024/04/08 |
 | LeetCode Easy | Array         | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) |
+| LeetCode Easy | Array         | [Best Time to Buy and Sell Stock 2](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)       |
