@@ -78,3 +78,4 @@
 | LeetCode Easy   | Array         | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)         |
 | LeetCode Medium | Array         | [Best Time to Buy and Sell Stock 2](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)    |
 | LeetCode Medium | Array         | [Rotate Array](https://leetcode.com/problems/rotate-array/)                                               |
+| LeetCode Easy   | Array         | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                                   |
