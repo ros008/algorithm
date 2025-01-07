@@ -74,13 +74,14 @@
 | P L3            | Tree          | [길 찾기 게임](https://school.programmers.co.kr/learn/courses/30/lessons/42892)                           | 2024/04/02 |
 | P L2            | String        | [스킬트리](https://school.programmers.co.kr/learn/courses/30/lessons/49993)                               | 2024/04/02 |
 | P L2            | Two Pointer   | [연속된 부분 수열의 합](https://school.programmers.co.kr/learn/courses/30/lessons/178870)                 | 2024/04/08 |
-| LeetCode Easy   | Array         | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) |
-| LeetCode Easy   | Array         | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)         |
-| LeetCode Medium | Array         | [Best Time to Buy and Sell Stock 2](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)    |
-| LeetCode Medium | Array         | [Rotate Array](https://leetcode.com/problems/rotate-array/)                                               |
-| LeetCode Easy   | Array         | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                                   |
-| LeetCode Easy   | Array         | [Single Number](https://leetcode.com/problems/single-number/)                                             |
-| LeetCode Easy   | Array         | [Intersection of Two Arrays 2](https://leetcode.com/problems/intersection-of-two-arrays-ii/)              |
-| LeetCode Easy   | Array         | [Plus One](https://leetcode.com/problems/plus-one/)                                                       |
-| LeetCode Easy   | Array         | [Move Zeroes](https://leetcode.com/problems/move-zeroes/)                                                 |
-| LeetCode Easy   | Array         | [Two Sum](https://leetcode.com/problems/two-sum/)                                                         |
+| LeetCode Easy   | Array         | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | 2025/01/07 |
+| LeetCode Easy   | Array         | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)         | 2025/01/07 |
+| LeetCode Medium | Array         | [Best Time to Buy and Sell Stock 2](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)    | 2025/01/07 |
+| LeetCode Medium | Array         | [Rotate Array](https://leetcode.com/problems/rotate-array/)                                               | 2025/01/07 |
+| LeetCode Easy   | Array         | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                                   | 2025/01/07 |
+| LeetCode Easy   | Array         | [Single Number](https://leetcode.com/problems/single-number/)                                             | 2025/01/07 |
+| LeetCode Easy   | Array         | [Intersection of Two Arrays 2](https://leetcode.com/problems/intersection-of-two-arrays-ii/)              | 2025/01/07 |
+| LeetCode Easy   | Array         | [Plus One](https://leetcode.com/problems/plus-one/)                                                       | 2025/01/07 |
+| LeetCode Easy   | Array         | [Move Zeroes](https://leetcode.com/problems/move-zeroes/)                                                 | 2025/01/07 |
+| LeetCode Easy   | Array         | [Two Sum](https://leetcode.com/problems/two-sum/)                                                         | 2025/01/07 |
+| LeetCode Medium | Array         | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                               | 2025/01/07 |
