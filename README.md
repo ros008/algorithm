@@ -88,3 +88,4 @@
 | LeetCode Medium | Array         | [Rotate Image](https://leetcode.com/problems/rotate-image/)                                               | 2025/01/07 |
 | LeetCode Easy   | Array         | [Reverse String](https://leetcode.com/problems/reverse-string/)                                           | 2025/01/07 |
 | LeetCode Medium | Array         | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                         | 2025/01/08 |
+| LeetCode Easy   | Array         | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)   | 2025/01/08 |
