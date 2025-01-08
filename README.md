@@ -87,3 +87,4 @@
 | LeetCode Medium | Array         | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                               | 2025/01/07 |
 | LeetCode Medium | Array         | [Rotate Image](https://leetcode.com/problems/rotate-image/)                                               | 2025/01/07 |
 | LeetCode Easy   | Array         | [Reverse String](https://leetcode.com/problems/reverse-string/)                                           | 2025/01/07 |
+| LeetCode Medium | Array         | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                         | 2025/01/08 |
