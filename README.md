@@ -86,6 +86,7 @@
 | LeetCode Easy   | Array         | [Two Sum](https://leetcode.com/problems/two-sum/)                                                         | 2025/01/07 |
 | LeetCode Medium | Array         | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                               | 2025/01/07 |
 | LeetCode Medium | Array         | [Rotate Image](https://leetcode.com/problems/rotate-image/)                                               | 2025/01/07 |
-| LeetCode Easy   | Array         | [Reverse String](https://leetcode.com/problems/reverse-string/)                                           | 2025/01/07 |
-| LeetCode Medium | Array         | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                         | 2025/01/08 |
-| LeetCode Easy   | Array         | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)   | 2025/01/08 |
+| LeetCode Easy   | String        | [Reverse String](https://leetcode.com/problems/reverse-string/)                                           | 2025/01/07 |
+| LeetCode Medium | String        | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                         | 2025/01/08 |
+| LeetCode Easy   | String        | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)   | 2025/01/08 |
+| LeetCode Easy   | String        | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                             | 2025/01/08 |
