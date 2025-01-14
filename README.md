@@ -92,4 +92,5 @@
 | LeetCode Easy   | String        | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                                  | 2025/01/08 |
 | LeetCode Easy   | String        | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                            | 2025/01/13 |
 | LeetCode Medium | String        | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                              | 2025/01/13 |
-| LeetCode Medium | String        | [Implement strStr()](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/885/) |
+| LeetCode Medium | String        | [Implement strStr()](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/885/) | 2025/01/13 |
+| LeetCode Easy   | String        | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                  | 2025/01/13 |
