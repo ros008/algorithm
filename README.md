@@ -96,3 +96,4 @@
 | LeetCode Easy   | String        | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                  | 2025/01/13 |
 | LeetCode Medium | Linked List   | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)                    | 2025/01/13 |
 | LeetCode Medium | Linked List   | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)            | 2025/01/13 |
+| LeetCode Easy   | Linked List   | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)                                      | 2025/01/13 |
