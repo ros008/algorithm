@@ -102,3 +102,4 @@
 | LeetCode Easy   | Linked List   | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                          | 2025/01/17 |
 | LeetCode Easy   | Tree          | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)                    | 2025/01/17 |
 | LeetCode Medium | Tree          | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)                      | 2025/01/17 |
+| LeetCode Easy   | Tree          | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)                                                | 2025/01/17 |
