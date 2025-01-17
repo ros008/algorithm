@@ -98,3 +98,4 @@
 | LeetCode Medium | Linked List   | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)            | 2025/01/15 |
 | LeetCode Easy   | Linked List   | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)                                      | 2025/01/15 |
 | LeetCode Easy   | Linked List   | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)                                | 2025/01/17 |
+| LeetCode Easy   | Linked List   | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)                                | 2025/01/17 |
